@@ -48,7 +48,7 @@ def partial_enchanter(
             }
 
 
-@lru_cache
+@lru_cache(maxsize=None)
 def memorized_fibonacci(n: int) -> int:
     if n <= 1:
         return n
